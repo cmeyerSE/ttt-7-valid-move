@@ -1,12 +1,14 @@
 require "pry"
 def valid_move?(board, index)
 # binding.pry
-  if board[index] == " "
+  if board[index] == " " 
     true
+  elsif board[index] == "" || board[index] == nil || board[index] == "X" || board[index] == "O"
+    false
   end
   
 end
 
 
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
+
